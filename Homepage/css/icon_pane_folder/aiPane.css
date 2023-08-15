@@ -1,0 +1,72 @@
+#wrapper #content-pane .content-body .body-items .icon-pane .iconPaneChild{
+    border: none;
+}
+
+#aiIcons .upperIcons{
+    width: 150px !important;
+    height: 50px;
+    background-color: transparent !important;
+    cursor: pointer;
+    transition: 0.75s;
+    position: relative;
+    z-index: 2;
+}
+
+#aiIcons .lowerIcons{
+    width: 1000px !important;
+    height: 50px;
+    background-color: transparent !important;
+    /* border: 10px solid black; */
+    cursor: pointer;
+    transition: 0.75s;
+    position: relative;
+    z-index: 5;
+}
+
+#aiIcons .upperIcons .upperIconHoverOpen{
+    width: 160px;
+    font-size: 22px;
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 50px;
+    background-color: tomato;
+    position: absolute;
+    right:0;
+    left:0;
+}
+
+#aiIcons .lowerIcons .lowerIconHoverOpen{
+    width: 160px;
+    right:0;
+    left:0;
+    font-size: 22px;
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 50px;
+    background-color: tomato;
+    position: absolute;
+}
+
+#aiIcons .upperIcons .uppers,
+#aiIcons .lowerIcons .lowers{
+    display: none;
+}
+
+/* #aiIcons .lowerIcons{
+    font-size: 22px;
+} */
+
+#aiIcons .upperIcons:hover{
+    width: 70% !important;
+    background-color: yellow !important;
+}
+#aiIcons .upperIcons:hover .upperIconHoverOpen{
+    left: 0;
+    z-index: 3;
+    transition: 0.5s;
+}
+#aiIcons .upperIcons:hover .uppers{
+    display: block;
+    position: relative;
+    z-index: 2;
+}

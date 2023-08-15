@@ -1,0 +1,57 @@
+/*
+Do not delete - kabir  
+.
+.
+.
+.
+/* 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Search Bar</title>
+  <style>
+    .search-bar {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #search-form {
+      display: inline-block;
+    }
+
+    #search-input {
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    #search-button {
+      padding: 8px 16px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-bar">
+    <form id="search-form">
+      <input type="text" id="search-input" placeholder="Search on Google">
+      <button type="submit" id="search-button">Search</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("search-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      var searchTerm = document.getElementById("search-input").value;
+      var url = "https://www.google.com/search?q=" + encodeURIComponent(searchTerm);
+      window.open(url, "_blank");
+    });
+  </script>
+</body>
+</html>

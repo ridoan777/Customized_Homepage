@@ -1,0 +1,45 @@
+#wrapper #content-pane .content-body .body-items .icon-pane .iconPaneChild{
+    width: 100%;
+}
+
+#content-pane .content-body .body-items .icon-pane .iconPaneChild{
+    display: none;
+}
+
+#content-pane .content-body .body-items .icon-pane #regularIcons{
+    display: block;
+}
+
+.iconPaneChild .upperIcons{
+    max-width: 70%;
+    background-color: yellow;
+}
+
+.iconPaneChild .lowerIcons{
+    min-width: 40%;
+    max-width: 40%;
+    background-color: cyan;
+}
+
+.iconPaneChild .iconPaneChildSubSection{
+    margin: 50px auto;
+    padding: 5px 10px;
+    font-size: 36px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.iconPaneChildSubSection > a{
+    margin: 0px 10px;
+}
+
+/*------*/
+#socialIcons .upperIcons{
+    background-color: rgb(12, 3, 27);
+}
+#socialIcons .lowerIcons{
+    background-color: rgb(19, 5, 41);
+}
